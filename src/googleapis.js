@@ -29,6 +29,7 @@ const getFolder = (folderId, token) => {
         },
         qs: {
           q: `'${folderId}' in parents`,
+          pageSize: 1000,
         },
       },
       (err, res, body) => {
